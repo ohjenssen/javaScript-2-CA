@@ -1,0 +1,17 @@
+.create-post {
+    background-color: $secondary;
+    border-radius: 1rem;
+
+    & .create-post-top {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    
+    }
+
+}
+
+.create-post-bottom {
+    & .btn {
+        width: 100%;
+    }
+}

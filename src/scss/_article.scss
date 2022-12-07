@@ -1,0 +1,19 @@
+.post-container {
+    background-color: $secondary;
+    border-radius: 1rem;
+
+    & .blog-post {
+        padding: 1rem;
+        border-radius: 1rem;
+    
+            & .post-profile-image {
+                max-width: 35px;
+                border-radius: 50%;
+            }
+    
+    }
+}
+
+.title-container {
+    padding: 1rem 1rem 0 1rem;
+}
