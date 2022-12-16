@@ -40,7 +40,7 @@ export async function renderPosts(posts){
         break;
 
         case '/user/userProfile/':
-            posts = await read.getProfilePosts();
+            posts = await read.getMyProfilePosts();
             for (let i = 0; i < posts.length; i++){
 
                 const title = posts[i].title;
@@ -62,6 +62,9 @@ export async function renderPosts(posts){
                 deletion.deletePost(postId);
             }))
         break;
+
+        // case '/otherProfiles/':
+        //     posts = 
 
     }
 }

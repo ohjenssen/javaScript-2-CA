@@ -5,7 +5,7 @@ import { getAccessToken } from "../../localStorage/getAccessToken.mjs";
  * Function that fetches the users posts from the api to be used in rendering
  * @returns {array} Array of objects containing all the posts 
  */
-export async function getProfilePosts(){
+export async function getMyProfilePosts(){
     const getProfileinformation = JSON.parse(localStorage.getItem('profileInfo'));
     const profileName = getProfileinformation.name;
 

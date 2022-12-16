@@ -20,7 +20,7 @@ export const feedPosts = (title, body, imageSrc, date, author, postId) => {
                             <article class="blog-post">
                                 <h3 class="blog-post-title">${title}</h3>
                                 <p class="blog-post-meta fst-italic">${date} by
-                                <a href="">${author}</a>
+                                <a href="../otherProfiles/?name=${author}">${author}</a>
                                 <img src="../images/profile-image-icon.webp" class="post-profile-image">
                                 </p>
                                 <div class="">

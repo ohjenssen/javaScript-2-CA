@@ -35,7 +35,6 @@ export const profileWithAvatarAndBanner = (banner, avatar, name, followers, foll
                                         <h5 class="card-title">Name: ${name}</h5>
                                         <p class="card-text">Followers: ${followers.length}</p>
                                         <p class="card-text">Following: ${following.length}</p>
-                                        <a class="btn btn-warning" href="../updateProfile">Edit profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -79,7 +78,6 @@ export const profileWithAvatar = (avatar, name, followers, following) => {
                                         <h5 class="card-title">Name: ${name}</h5>
                                         <p class="card-text">Followers: ${followers.length}</p>
                                         <p class="card-text">Following: ${following.length}</p>
-                                        <a class="btn btn-warning" href="../updateProfile">Edit profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +119,6 @@ export const profileWithBanner = (banner, name, followers, following) => {
                                         <h5 class="card-title">Name: ${name}</h5>
                                         <p class="card-text">Followers: ${followers.length}</p>
                                         <p class="card-text">Following: ${following.length}</p>
-                                        <a class="btn btn-warning" href="../updateProfile">Edit profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +158,6 @@ export const profileWithoutMedia = (name, followers, following) => {
                                         <h5 class="card-title">Name: ${name}</h5>
                                         <p class="card-text">Followers: ${followers.length}</p>
                                         <p class="card-text">Following: ${following.length}</p>
-                                        <a class="btn btn-warning" href="../updateProfile">Edit profile</a>
                                     </div>
                                 </div>
                             </div>

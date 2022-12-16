@@ -42,6 +42,9 @@ export function setPath(path){
             listeners.read.renderUpdateProfile();
             listeners.update.updateProfileListener();
 
+        case '/otherProfiles/':
+            listeners.read.renderProfile();
+
 
     }
     listeners.authentication.setLogoutListener();
