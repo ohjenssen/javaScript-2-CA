@@ -50,4 +50,5 @@ export function setPath(path){
     listeners.authentication.setLogoutListener();
     listeners.filtersAndSearch.setSearchFormListener();
     listeners.filtersAndSearch.filterByImagesListener();
+    listeners.filtersAndSearch.filterAlphabeticallyListener();
 }
