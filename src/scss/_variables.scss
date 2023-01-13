@@ -1,0 +1,41 @@
+$neon-red: #ff124f;
+$neon-pink: #ff00a0;
+$neon-light-pink: #fe75fe;
+$neon-purple: #7a04eb;
+$neon-dark-purple: #120458;
+$neon-cyan: #00fefc;
+$neon-green: #39FF14;
+
+// Color palette
+$primary: $neon-red;
+$secondary: $neon-dark-purple;
+$warning: $neon-purple;
+$info: $neon-cyan;
+
+
+// Card
+$card-bg: $secondary;
+
+// Contact list
+$list-group-bg: $neon-purple;
+$list-group-border-color: $secondary;
+$list-group-color: white;
+
+// Form
+$input-color: black;
+$input-btn-focus-color: black;
+
+$body-color: white;
+$border-color: $primary;
+
+//Spacing 
+$spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 6,
+);

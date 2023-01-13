@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../dist/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <title>Search Results | Square Eyes</title>
+</head>
+<body>
+    <div class="container">
+        <!-- NAVIGATION -->
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-md navbar-dark mx-auto d-flex align-items-end">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="../images/squareEyesLogo-phone.png" style="width:200px;">
+                    </a>
+                    <button class="navbar-toggler custom-toggler" 
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../home/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../user/userProfile/">Profile</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Filters
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li>
+                                        <form class="d-flex m-2" id="filterForm">
+                                            <div class="form-check" id="filterByImages">
+                                                <input class="form-check-input" type="checkbox" value="" id="checkboxImages" name="flexCheckImages" unchecked>
+                                                <label class="form-check-label" for="flexCheckImages">
+                                                    With images
+                                                </label>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <form class="d-flex" id="searchForm">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searchBar" id="searchBar" style="max-width:150px;">
+                                    <button class="btn btn-primary" type="submit">Search</button>
+                                  </form>
+                            </li>
+                        </ul>
+                            <a href="../index.html" id="logout" class="btn btn-info">Log out</a>
+                    </div>
+                </div>
+              </nav>
+        </header>
+        <main class="mt-5">
+            <!-- POSTS FEED -->
+            <div class="row mt-3">
+              <div class="col-12">
+                <!-- posts title -->
+                <div class="post-container" id="searchResults">
+                  <div class="title-container">
+                    <h3>Search results</h2>
+                    <hr>
+                  </div>
+                  <!-- <article class="blog-post">
+                    <h4 class="blog-post-title">A post</h3>
+                    <p class="blog-post-meta">October 27, 2022 by
+                        <a href="#">Jane Doe</a>
+                        <img src="../images/profile-image-icon.webp" class="post-profile-image">
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis venenatis, ullamcorper orci ut, convallis lacus. Praesent vitae lectus tortor. Ut non tortor viverra ipsum porttitor convallis vitae eget neque. Mauris volutpat quam tellus, vitae auctor dolor luctus a. Aliquam nec est vel lectus hendrerit laoreet vel eu turpis.</p>
+                  </article>
+                  <article class="blog-post">
+                    <h4 class="blog-post-title">A post</h3>
+                    <p class="blog-post-meta">November 2, 2022 by
+                        <a href="#">Sheldon Cooper</a>
+                        <img src="../images/profile-image-icon.webp" class="post-profile-image">
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac turpis venenatis, ullamcorper orci ut, convallis lacus. Praesent vitae lectus tortor. Ut non tortor viverra ipsum porttitor convallis vitae eget neque. Mauris volutpat quam tellus, vitae auctor dolor luctus a. Aliquam nec est vel lectus hendrerit laoreet vel eu turpis.</p>
+                  </article> -->
+                </div> 
+              </div>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 m-4 border-top">
+          <div class="col d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img src="../images/squareEyesLogo-phone.png" style="width:200px;">
+            </a>
+            <span class="mb-3 mb-md-0 text-white">© 2022 Company, Inc</span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="bi bi-facebook" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="bi bi-twitter" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="bi bi-instagram" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+    </div>
+    <script src="../src/js/index.mjs" type="module"></script>
+</body>
+</html>

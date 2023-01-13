@@ -1,0 +1,18 @@
+//Variable overrides
+@import "variables";
+
+//Bootstrap files
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Custom components
+@import "layout";
+@import "navbar";
+@import "article";
+@import "create-post";
+@import "card";
+
+// Custom styles
+:root {
+    --bs-body-font-family: Futura, open-sans, sans-serif;
+    --bs-body-font-weight: 200;
+  }
